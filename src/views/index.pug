@@ -1,0 +1,15 @@
+extends layouts/default
+
+block variables
+    - const title = "gulp-pug-starter"
+
+block content
+    include ../blocks/modules/hero/hero
+    include ../blocks/modules/about/about
+    include ../blocks/modules/house/house
+    include ../blocks/modules/help/help
+    include ../blocks/modules/donation/donation
+    include ../blocks/modules/footer/footer
+
+block scripts
+    script(src="js/main.js")

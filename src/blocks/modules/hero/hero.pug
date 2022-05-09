@@ -1,0 +1,38 @@
+section.hero
+    .hero-top
+        header.header
+            .logo__wrap
+                .logo__name Cozy House
+                .logo__desc Shelter for pets in Boston
+            nav.navbar.navbar--desk
+                ul.navbar__list
+                    li.navbar__item
+                        a(href='#about').navbar__link About the shelter
+                    li.navbar__item
+                        a(href='#house').navbar__link Our pets
+                    li.navbar__item
+                        a(href='#help').navbar__link To help the shelter
+                    li.navbar__item
+                        a(href='#footer').navbar__link Contacts
+            #nav__toggle
+                span
+                span
+                span
+            nav.navbar.navbar--mobile.backdrop
+                    ul.navbar__list.navbar__list--mobile
+                        li.navbar--mobile__close-btn
+                            btn(type="btn")
+                                img(src="./img/svg/close.svg")
+                        li.navbar__item
+                            a(href='#about').navbar__link About the shelter
+                        li.navbar__item
+                            a(href='#house').navbar__link Our pets
+                        li.navbar__item
+                            a(href='#help').navbar__link To help the shelter
+                        li.navbar__item
+                            a(href='#contacts').navbar__link Contacts
+
+    .hero__content
+        h1 Not only people need a house
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida est in porttitot portittor. Duis sodales elementum ipsum, vehicula condimentum erat fringilla et.
+        a(href='#house').hero__btn Make a friend

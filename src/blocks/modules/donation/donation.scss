@@ -1,0 +1,75 @@
+.donation {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3rem;
+
+  @include tablet-medium {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+  }
+
+  &__img img {
+    width: 100%;
+
+    @include tablet-large {
+      max-width: 400px;
+    }
+
+    @include tablet-medium {
+      max-width: 250px;
+    }
+  }
+
+  &__content {
+    flex: 0.5;
+  }
+
+  &__credentials {
+   margin: 2rem auto;
+
+    &-title {
+      font-size: 15px;
+      font-family: $heading-font-family;
+      letter-spacing: 1px;
+      color: #545454;
+    }
+
+    &-account {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      column-gap: 20px;
+      max-width: 315px;
+      width: 100%;
+      padding: 15px;
+      margin-top: 1rem;
+      background: $accent-color;
+      border-radius: 9px;
+
+      font-family: "Times New Roman", sans-serif;
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: #292929;
+      white-space: nowrap;
+
+      &__icon {
+        width: 30px;
+        height: 20px;
+      }
+    }
+
+    &-desc {
+      font-family: $main-font-family;
+      font-size: 12px;
+      line-height: 1.5;
+      color: #b2b2b2;
+      font-style: italic;
+    }
+  }
+}

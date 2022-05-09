@@ -1,0 +1,56 @@
+.help {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  @include tablet-medium {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+  }
+
+  h2 {
+    margin-bottom: 3rem;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 70px;
+}
+  &__item {
+    flex: 1 1 25%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablet-medium {
+      width: 20%;
+      flex: initial;
+    }
+  }
+
+   &__icon {
+    max-width: 54px;
+  }
+
+  p {
+    font-family: $heading-font-family;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    color: #545454;
+    white-space: nowrap;
+
+    @include tablet-large {
+      font-size: 20px;
+    }
+  }
+
+  h2 {
+    max-width: 360px;
+  }
+}
